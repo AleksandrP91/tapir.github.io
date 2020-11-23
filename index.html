@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/css/style.css" />
+  </head>
+  <body>
+    
+    <div class="card-payment">
+      <div class="wrapp">
+
+      <!-- ссылки (навигация) -->
+        <nav class="navigation">
+          <ul class="nav__item">
+            <li class="nav__list">
+              <a href="#" class="nav__link">Первая ссылка</a>
+            </li>
+            <li class="nav__list">
+              <a href="#" class="nav__link">Вторая ссылка</a>
+            </li>
+            <li class="nav__list">
+              <a href="#" class="nav__link">Третья ссылка</a>
+            </li>
+            <li class="nav__list">
+              <a href="#" class="nav__link">Четвертая ссылка</a>
+            </li>
+          </ul>
+          <div class="nav__logotype">
+            <img src="dist/static/logotype.svg" alt="logotype">
+          </div>
+        </nav>
+      <!-- / -->
+
+      <!-- форма оплаты -->
+        <form action="#" class="form">
+          <div class="form__title">
+            <h1>Заголовок страницы</h1>
+          </div>
+
+          <!-- номер счета, сумма платежа -->
+          <div class="form__info">
+            <div class="info__number">
+              <p>Номер счета</p>
+              <p>786 456 893993873</p>
+            </div>
+            <div class="info__sum">
+              <p>Сумма платежа</p>
+              <p>2 790</p>
+            </div>
+          </div>
+          <!-- / -->
+
+          <!-- номер карты -->
+          <input type="number">
+          <input type="number">
+          <input type="number">
+          <input type="number">
+          <!-- / -->
+
+          <!-- держатель карты -->
+          <input type="text">
+          <!-- / -->
+
+          <!-- срок действия / cvc -->
+          <div class="form__date">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+          </div>
+          <!-- / -->
+        </form>
+      <!-- . -->
+      </div>
+    </div>
+
+    <script src="dist/js/app.js"></script>
+  </body>
+</html>
