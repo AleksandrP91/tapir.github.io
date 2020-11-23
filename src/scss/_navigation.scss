@@ -3,7 +3,7 @@
   padding-top: 33px;
   width: 231px;
   height: 513px;
-  background: #1c1d20;
+  background-color: #1c1d20;
 
   // nav-item
   .nav__item {
@@ -23,6 +23,11 @@
     }
     .nav__link:hover {
       color: #ffffff;
+      transition: 0.5s;
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      -ms-transition: 0.5s;
+      -o-transition: 0.5s;
     }
   }
 
@@ -31,5 +36,12 @@
     position: absolute;
     bottom: 46px;
     left: 32px;
+  }
+}
+
+// media
+@media (max-width: 767px) {
+  .navigation {
+    display: none;
   }
 }

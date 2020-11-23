@@ -247,3 +247,65 @@
     }
   }
 }
+
+// media
+@media (max-width: 479px) {
+  .form {
+    padding: 37px 30px 34px;
+    width: 335px;
+    .form__info {
+      .info__sum {
+        margin-right: 40px;
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+    .form__info {
+      .info__number {
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+    .form__number-card {
+      .number-card_input {
+        input {
+          width: 60px;
+          font-size: 13px;
+          padding: 15px;
+        }
+      }
+    }
+    .form__text {
+      input {
+        width: 275px;
+      }
+    }
+    .form__descr {
+      p {
+        padding-right: 90px;
+      }
+    }
+    .form__date {
+      .date {
+        .date__month {
+          width: 60px;
+        }
+        .date__year {
+          width: 60px;
+        }
+      }
+      .date__cvc {
+        input {
+          width: 60px;
+        }
+      }
+    }
+    .form__submit {
+      button {
+        width: 275px;
+      }
+    }
+  }
+}

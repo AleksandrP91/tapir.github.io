@@ -1,0 +1,115 @@
+.burger__menu {
+  display: none;
+  padding-top: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(28, 29, 32, 0.97);
+  width: 80%;
+  height: 100%;
+  z-index: 20;
+  .burger__menu-nav {
+    display: flex;
+    flex-flow: column;
+    img {
+      margin-top: 80%;
+    }
+    .burger__menu-link {
+      width: 100%;
+      text-align: center;
+      color: #959595;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+      padding: 10px;
+    }
+    .burger__menu-link:hover {
+      color: #ffffff;
+      background-color: #101114;
+      transition: 0.5s;
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      -ms-transition: 0.5s;
+      -o-transition: 0.5s;
+    }
+  }
+}
+.button-menu {
+  display: none;
+}
+.burger__menu-button {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  // border-radius: 5px;
+  // -webkit-border-radius: 5px;
+  // -moz-border-radius: 5px;
+  // -ms-border-radius: 5px;
+  // -o-border-radius: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  .burger__menu-lines {
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #101114;
+  }
+  .burger__menu-lines::before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 2px;
+    background-color: #101114;
+    margin-top: 5px;
+  }
+  .burger__menu-lines::after {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 2px;
+    background-color: #101114;
+    margin-top: -5px;
+  }
+}
+
+// x
+.burger__menu-active .burger__menu-lines {
+  background-color: transparent;
+}
+
+.burger__menu-active .burger__menu-lines::before {
+  top: -5px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+.burger__menu-active .burger__menu-lines::after {
+  top: 5px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+}
+
+// active
+.menu__active {
+  display: block;
+}
+
+// media
+@media (max-width: 767px) {
+  .button-menu {
+    display: block;
+  }
+}
+
