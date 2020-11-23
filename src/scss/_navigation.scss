@@ -1,6 +1,29 @@
 .navigation {
+  position: relative;
+  padding-top: 33px;
   width: 231px;
   height: 513px;
-
   background: #1C1D20;
+  .nav__item {
+    .nav__list {
+      height: 37px;
+      line-height: 37px;
+      // background-color: #101114;
+    }
+    .nav__list:active {
+      background-color: #101114;
+    }
+    .nav__link {
+      padding-left: 31px;
+      color: #959595;
+    }
+    .nav__link:hover {
+      color: #ffffff;
+    }
+  }
+  .nav__logotype {
+    position: absolute;
+    bottom: 46px;
+    left: 32px;
+  }
 }
