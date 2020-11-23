@@ -7,11 +7,9 @@
     <link rel="stylesheet" href="dist/css/style.css" />
   </head>
   <body>
-    
     <div class="card-payment">
       <div class="wrapp">
-
-      <!-- ссылки (навигация) -->
+        <!-- ссылки (навигация) -->
         <nav class="navigation">
           <ul class="nav__item">
             <li class="nav__list">
@@ -29,13 +27,13 @@
           </ul>
           <div class="nav__logotype">
             <a href="#">
-              <img src="dist/static/logotype.svg" alt="logotype">
+              <img src="dist/static/logotype.svg" alt="logotype" />
             </a>
           </div>
         </nav>
-      <!-- / -->
+        <!-- / -->
 
-      <!-- форма оплаты -->
+        <!-- форма оплаты -->
         <form action="#" class="form">
           <div class="form__title">
             <h1>Заголовок страницы</h1>
@@ -58,27 +56,52 @@
           <div class="form__number-card">
             <p>Номер карты</p>
             <div class="number-card_input">
-              <input type="number" required min="1" max="4">
-              <input type="number">
-              <input type="number">
-              <input type="number">
+              <input type="number" required />
+              <input type="number" required />
+              <input type="number" required />
+              <input type="number" required />
             </div>
           </div>
           <!-- / -->
 
           <!-- держатель карты -->
-          <input type="text">
-          <!-- / -->
-
-          <!-- срок действия / cvc -->
-          <div class="form__date">
-            <input type="text">
-            <input type="text">
-            <input type="text">
+          <div class="form__text">
+            <p>Держатель карты</p>
+            <input type="text" required placeholder="Иванов Иван Иванович" />
           </div>
           <!-- / -->
+
+          <!-- срок действия / cvc-->
+          <div class="form__descr">
+            <p>Срок действия</p>
+            <p>cvc</p>
+          </div>
+
+          <!-- month / year-->
+          <div class="form__date">
+            <div class="date">
+              <div class="date__month">
+                <img src="dist/static/arrow.svg" alt="arrow" />
+              </div>
+              <div class="date__year">
+                <img src="dist/static/arrow.svg" alt="arrow" />
+              </div>
+            </div>
+
+            <div class="date__cvc">
+              <input type="number" required/>
+            </div>
+          </div>
+          <!-- / -->
+
+          <!-- submit -->
+          <div class="form__submit">
+            <input type="submit" placeholder="оплатить" />
+          </div>
+          <!-- / -->
+
         </form>
-      <!-- . -->
+        <!-- / -->
       </div>
     </div>
 
