@@ -43,22 +43,27 @@
 
           <!-- номер счета, сумма платежа -->
           <div class="form__info">
-            <div class="info__number">
-              <p>Номер счета</p>
-              <p>786 456 893993873</p>
-            </div>
             <div class="info__sum">
+              <p>Номер счёта</p>
               <p>Сумма платежа</p>
+            </div>
+            <div class="info__number">
+              <p>786 456 893993873</p>
               <p>2 790</p>
             </div>
           </div>
           <!-- / -->
 
           <!-- номер карты -->
-          <input type="number">
-          <input type="number">
-          <input type="number">
-          <input type="number">
+          <div class="form__number-card">
+            <p>Номер карты</p>
+            <div class="number-card_input">
+              <input type="number" required min="1" max="4">
+              <input type="number">
+              <input type="number">
+              <input type="number">
+            </div>
+          </div>
           <!-- / -->
 
           <!-- держатель карты -->

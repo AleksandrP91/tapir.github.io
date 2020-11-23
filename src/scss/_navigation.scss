@@ -4,11 +4,12 @@
   width: 231px;
   height: 513px;
   background: #1C1D20;
+
+  // nav-item
   .nav__item {
     .nav__list {
       height: 37px;
       line-height: 37px;
-      // background-color: #101114;
     }
     .nav__list:active {
       background-color: #101114;
@@ -16,11 +17,16 @@
     .nav__link {
       padding-left: 31px;
       color: #959595;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.5px;
     }
     .nav__link:hover {
       color: #ffffff;
     }
   }
+
+  // nav-logotype
   .nav__logotype {
     position: absolute;
     bottom: 46px;

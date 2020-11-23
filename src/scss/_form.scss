@@ -1,5 +1,83 @@
 .form {
+  position: relative;
   width: 389px;
   height: 513px;
   background-color: #ffffff;
+  padding: 37px 34px 34px;
+
+  // form-title
+  .form__title {
+    width: 271px;
+    height: 37px;
+    h1 {
+      font-size: 26px;
+      font-weight: 700;
+      color: #000000;
+    }
+  }
+
+  // form-info
+  .form__info {
+    display: flex;
+    margin-top: 18px;
+    .info__sum {
+      width: 104px;
+      height: 36px;
+      line-height: 18px;
+      margin-right: 50px;
+      p {
+        color: #959595;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+    .info__number {
+      width: 127px;
+      height: 36px;
+      line-height: 18px;
+      p {
+        color: #101114;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  // form-number-card
+  .form__number-card {
+    margin-top: 25px;
+    p {
+      width: 102px;
+      height: 16px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 15px;
+      letter-spacing: 0.75px;
+      color: #101114;
+      text-transform: uppercase;
+    }
+    .number-card_input {
+      margin-top: 12px;
+      display: flex;
+      justify-content: space-between;
+      input {
+        padding: 16px;
+        width: 70px;
+        height: 39px;
+        background-color: #F0F0F0;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+}
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
+  }
 }
