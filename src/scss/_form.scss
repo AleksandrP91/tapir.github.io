@@ -117,7 +117,13 @@
       font-weight: 400;
     }
     input::-webkit-input-placeholder {
-      color: #959595
+      color: #959595;
+    }
+    input:not(:placeholder-shown):valid {
+      border: 1px solid green;
+    }
+    input:not(:placeholder-shown):invalid {
+      border: 1px solid red;
     }
   }
   // form-descr
@@ -215,7 +221,7 @@
   // submit
   .form__submit {
     margin-top: 35px;
-    input {
+    button {
       width: 320px;
       height: 45px;
       background-color: #4253ff;

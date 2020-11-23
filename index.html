@@ -35,71 +35,78 @@
 
         <!-- форма оплаты -->
         <form action="#" class="form">
-          <div class="form__title">
-            <h1>Заголовок страницы</h1>
-          </div>
-
-          <!-- номер счета, сумма платежа -->
-          <div class="form__info">
-            <div class="info__sum">
-              <p>Номер счёта</p>
-              <p>Сумма платежа</p>
+          <label for="">
+            <div class="form__title">
+              <h1>Заголовок страницы</h1>
             </div>
-            <div class="info__number">
-              <p>786 456 893993873</p>
-              <p>2 790</p>
-            </div>
-          </div>
-          <!-- / -->
 
-          <!-- номер карты -->
-          <div class="form__number-card">
-            <p>Номер карты</p>
-            <div class="number-card_input">
-              <input type="number" required />
-              <input type="number" required />
-              <input type="number" required />
-              <input type="number" required />
-            </div>
-          </div>
-          <!-- / -->
-
-          <!-- держатель карты -->
-          <div class="form__text">
-            <p>Держатель карты</p>
-            <input type="text" required placeholder="Иванов Иван Иванович" />
-          </div>
-          <!-- / -->
-
-          <!-- срок действия / cvc-->
-          <div class="form__descr">
-            <p>Срок действия</p>
-            <p>cvc</p>
-          </div>
-
-          <!-- month / year-->
-          <div class="form__date">
-            <div class="date">
-              <div class="date__month">
-                <img src="dist/static/arrow.svg" alt="arrow" />
+            <!-- номер счета, сумма платежа -->
+            <div class="form__info">
+              <div class="info__sum">
+                <p>Номер счёта</p>
+                <p>Сумма платежа</p>
               </div>
-              <div class="date__year">
-                <img src="dist/static/arrow.svg" alt="arrow" />
+              <div class="info__number">
+                <p>786 456 893993873</p>
+                <p>2 790</p>
               </div>
             </div>
+            <!-- / -->
 
-            <div class="date__cvc">
-              <input type="number" required/>
+            <!-- номер карты -->
+            <div class="form__number-card">
+              <p>Номер карты</p>
+              <div class="number-card_input">
+                <input type="number" required pattern="[0-9]{4}" title="4" />
+                <input type="number" required />
+                <input type="number" required />
+                <input type="number" required />
+              </div>
             </div>
-          </div>
-          <!-- / -->
+            <!-- / -->
 
-          <!-- submit -->
-          <div class="form__submit">
-            <input type="submit" placeholder="оплатить" />
-          </div>
-          <!-- / -->
+            <!-- держатель карты -->
+            <div class="form__text">
+              <p>Держатель карты</p>
+              <input
+                type="text"
+                required
+                placeholder="Иванов Иван Иванович"
+                pattern="[A-zÀ-ž\s]{4,}"
+              />
+            </div>
+            <!-- / -->
 
+            <!-- срок действия / cvc-->
+            <div class="form__descr">
+              <p>Срок действия</p>
+              <p>cvc</p>
+            </div>
+
+            <!-- month / year-->
+            <div class="form__date">
+              <div class="date">
+                <div class="date__month">
+                  <img src="dist/static/arrow.svg" alt="arrow" />
+                </div>
+                <div class="date__year">
+                  <img src="dist/static/arrow.svg" alt="arrow" />
+                </div>
+              </div>
+
+              <div class="date__cvc">
+                <input type="number" required />
+              </div>
+            </div>
+            <!-- / -->
+
+            <!-- submit -->
+            <div class="form__submit">
+              <!-- <input type="submit" value="Оплатить" /> -->
+              <button type="submit">Оплатить</button>
+            </div>
+            <!-- / -->
+          </label>
         </form>
         <!-- / -->
       </div>
