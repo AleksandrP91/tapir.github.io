@@ -207,6 +207,8 @@
       background-color: #1c1d20;
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px;
+      overflow-x: scroll;
+      height: 80px;
       .select__item-month {
         cursor: pointer;
         padding: 5px 12px;
@@ -234,6 +236,8 @@
       background-color: #1c1d20;
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px;
+      overflow-x: scroll;
+      height: 80px;
       .select__item-year {
         cursor: pointer;
         padding: 5px 12px;
