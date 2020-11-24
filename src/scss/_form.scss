@@ -156,83 +156,7 @@
     }
   }
 
-  // // form-date
-  // .form__date {
-  //   margin-top: 11px;
-  //   display: flex;
-  //   justify-content: space-between;
-  //   .date {
-  //     display: flex;
-  //     .date__month {
-  //       .month {
-  //         padding-left: 10px;
-  //         margin-right: 14px;
-  //         width: 70px;
-  //         height: 39px;
-  //         background-color: #f0f0f0;
-  //         outline: none;
-  //         border: none;
-  //         border-radius: 5px;
-  //         -webkit-border-radius: 5px;
-  //         -moz-border-radius: 5px;
-  //         -ms-border-radius: 5px;
-  //         -o-border-radius: 5px;
-  //       }
-  //     }
-  //     .date__year {
-  //       .year {
-  //         padding-left: 10px;
-  //         width: 70px;
-  //         height: 39px;
-  //         background-color: #f0f0f0;
-  //         outline: none;
-  //         border: none;
-  //         border-radius: 5px;
-  //         -webkit-border-radius: 5px;
-  //         -moz-border-radius: 5px;
-  //         -ms-border-radius: 5px;
-  //         -o-border-radius: 5px;
-  //       }
-  //     }
-  //   }
-
-  //   // cvc
-  //   .date__cvc {
-  //     input {
-  //       text-align: center;
-  //       padding: 16px;
-  //       width: 70px;
-  //       height: 39px;
-  //       color: #101114;
-  //       background-color: #f0f0f0;
-  //       outline: none;
-  //       border: none;
-  //       border-radius: 5px;
-  //       -webkit-border-radius: 5px;
-  //       -moz-border-radius: 5px;
-  //       -ms-border-radius: 5px;
-  //       -o-border-radius: 5px;
-
-  //       color: #101114;
-  //       font-size: 14px;
-  //       font-weight: 400;
-  //     }
-  //     input::-webkit-outer-spin-button,
-  //     input::-webkit-inner-spin-button {
-  //       -webkit-appearance: none;
-  //       margin: 0;
-  //     }
-  //   }
-  // }
-
-  // // valid
-  // input[data-rule].valid-form {
-  //   border: 1px solid green;
-  // }
-  // input[data-rule].invalid-form {
-  //   border: 1px solid red;
-  // }
-
+  // selected
   .select {
     margin-top: 11px;
     display: flex;
@@ -283,13 +207,13 @@
       background-color: #1c1d20;
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px;
-      .select__item {
+      .select__item-month {
         cursor: pointer;
         padding: 5px 12px;
         font-size: 14px;
         font-weight: 400;
       }
-      .select__item:active {
+      .select__item-month:active {
         background-color: #000;
       }
       a {
@@ -310,14 +234,14 @@
       background-color: #1c1d20;
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px;
-      .select__item {
+      .select__item-year {
         cursor: pointer;
         padding: 5px 12px;
         color: #959595;
         font-size: 14px;
         font-weight: 400;
       }
-      .select__item:active {
+      .select__item-year:active {
         background-color: #000;
       }
       a {
@@ -360,7 +284,7 @@
       -o-transition: 0.4s;
     }
 
-    //   // cvc
+    // cvc
     .date__cvc {
       input {
         text-align: center;
@@ -460,18 +384,24 @@
         padding-right: 90px;
       }
     }
-    .form__date {
-      .date {
-        .date__month {
-          width: 60px;
-        }
-        .date__year {
-          width: 60px;
-        }
+    .select {
+      .select__header {
+        width: 60px;
+      }
+      .month {
+        width: 60px;
+      }
+      .year {
+        width: 60px;
+      }
+      .select__year {
+        margin-right: 70px;
       }
       .date__cvc {
         input {
           width: 60px;
+          font-size: 13px;
+          padding: 15px;
         }
       }
     }

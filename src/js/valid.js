@@ -8,7 +8,6 @@ const validation = function () {
       // содержимое input
       let value = this.value;
       let check;
-      console.log(check);
 
       switch (rule) {
         case 'number':
