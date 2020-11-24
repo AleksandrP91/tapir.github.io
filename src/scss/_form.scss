@@ -61,7 +61,8 @@
       display: flex;
       justify-content: space-between;
       input {
-        padding: 16px;
+        text-align: center;
+        padding: 12px;
         width: 70px;
         height: 39px;
         background-color: #f0f0f0;
@@ -80,10 +81,17 @@
       input::-webkit-outer-spin-button,
       input::-webkit-inner-spin-button {
         -webkit-appearance: none;
-        margin: 0;
       }
     }
   }
+
+// valid
+input[data-rule].valid-form {
+  border: 1px solid green;
+}
+input[data-rule].invalid-form {
+  border: 1px solid red;
+}
 
   // form-text
   .form__text {
@@ -119,13 +127,16 @@
     input::-webkit-input-placeholder {
       color: #959595;
     }
-    input:not(:placeholder-shown):valid {
-      border: 1px solid green;
-    }
-    input:not(:placeholder-shown):invalid {
-      border: 1px solid red;
-    }
   }
+
+  // valid
+input[data-rule].valid-form {
+  border: 1px solid green;
+}
+input[data-rule].invalid-form {
+  border: 1px solid red;
+}
+
   // form-descr
   .form__descr {
     margin-top: 24px;
@@ -218,6 +229,14 @@
     }
   }
 
+  // valid
+input[data-rule].valid-form {
+  border: 1px solid green;
+}
+input[data-rule].invalid-form {
+  border: 1px solid red;
+}
+
   // submit
   .form__submit {
     margin-top: 35px;
@@ -238,12 +257,6 @@
       letter-spacing: 0.75px;
       text-transform: uppercase;
       cursor: pointer;
-    }
-    input:valid {
-      border: 1px solid green;
-    }
-    input:invalid {
-      border: 1px solid red;
     }
   }
 }
