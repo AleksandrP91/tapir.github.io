@@ -4,3 +4,9 @@
 
   display: flex;
 }
+
+@media (max-width: 767) {
+  .wrapp {
+    margin-top: 10px;
+  }
+}
