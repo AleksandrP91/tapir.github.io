@@ -15,13 +15,12 @@ const validation = function () {
           let length = value.length;
           let from = +this.dataset.from;
           let to = +this.dataset.to;
-          check = (length >= from && length <= to);
+          check = length >= from && length <= to;
           break;
         case 'text':
           check = /^[a-zA-Z][a-zA-Z-_\.]{3,20}$/.test(value);
           break;
       }
-      // есди check = true красим в зеленный если false красим в красный
       this.classList.remove('invalid-form');
       this.classList.remove('valid-form');
       if (check) {
@@ -29,7 +28,6 @@ const validation = function () {
       } else {
         this.classList.add('invalid-form');
       }
-
     });
   }
 };

@@ -15,7 +15,7 @@
           <a href="" class="burger__menu-link">Вторая ссылка</a>
           <a href="" class="burger__menu-link">Третья ссылка</a>
           <a href="" class="burger__menu-link">Четвертая ссылка</a>
-          <img src="dist/static/logotype.svg" alt="logotype">
+          <img src="dist/static/logotype.svg" alt="logotype" />
         </div>
       </div>
       <!-- button -->
@@ -75,10 +75,34 @@
             <div class="form__number-card">
               <p>Номер карты</p>
               <div class="number-card_input">
-                <input type="number" required data-rule="number" data-from="4" data-to="4"/>
-                <input type="number" required data-rule="number" data-from="4" data-to="4"/>
-                <input type="number" required data-rule="number" data-from="4" data-to="4"/>
-                <input type="number" required data-rule="number" data-from="4" data-to="4"/>
+                <input
+                  type="number"
+                  required
+                  data-rule="number"
+                  data-from="4"
+                  data-to="4"
+                />
+                <input
+                  type="number"
+                  required
+                  data-rule="number"
+                  data-from="4"
+                  data-to="4"
+                />
+                <input
+                  type="number"
+                  required
+                  data-rule="number"
+                  data-from="4"
+                  data-to="4"
+                />
+                <input
+                  type="number"
+                  required
+                  data-rule="number"
+                  data-from="4"
+                  data-to="4"
+                />
               </div>
             </div>
             <!-- / -->
@@ -86,7 +110,12 @@
             <!-- держатель карты -->
             <div class="form__text">
               <p>Держатель карты</p>
-              <input type="text" required placeholder="Иванов Иван Иванович" data-rule="text"/>
+              <input
+                type="text"
+                required
+                placeholder="Иванов Иван Иванович"
+                data-rule="text"
+              />
             </div>
             <!-- / -->
 
@@ -97,18 +126,96 @@
             </div>
 
             <!-- month / year-->
-            <div class="form__date">
+            <!-- <div class="form__date">
               <div class="date">
                 <div class="date__month">
-                  <img src="dist/static/arrow.svg" alt="arrow" />
+                  <select class="month">
+                    <option value=''>Month</option>
+                    <option value='01'>01</option>
+                    <option value='02'>02</option>
+                    <option value='03'>03</option>
+                    <option value='04'>04</option>
+                    <option value='05'>05</option>
+                    <option value='06'>06</option>
+                    <option value='07'>07</option>
+                    <option value='08'>08</option>
+                    <option value='09'>09</option>
+                    <option value='10'>10</option>
+                    <option value='11'>11</option>
+                    <option value='12'>12</option>
+                  </select> 
                 </div>
                 <div class="date__year">
-                  <img src="dist/static/arrow.svg" alt="arrow" />
+                  <select class="year">
+                    <option value=''>Year</option>
+                    <option value='20'>20</option>
+                    <option value='21'>21</option>
+                    <option value='22'>22</option>
+                    <option value='23'>23</option>
+                    <option value='24'>24</option>
+                    <option value='25'>25</option>
+                  </select>
                 </div>
               </div>
 
               <div class="date__cvc">
-                <input type="number" required data-rule="number" data-from="4" data-to="4"/>
+                <input type="number" required data-rule="number" data-from="3" data-to="3"/>
+              </div>
+            </div> -->
+            <!-- / -->
+
+            <!-- select -->
+            <div class="select">
+              <div class="select__month">
+                <div class="select__header">
+                  <span class="select__current">01</span>
+                  <div class="select__icon-month">
+                    <img src="dist/static/arrow.svg" alt="arrow" />
+                  </div>
+                </div>
+
+                <div class="month">
+                  <div class="select__item">
+                    <a href="#">01</a>
+                  </div>
+                  <div class="select__item">
+                    <a href="#">02</a>
+                  </div>
+                  <div class="select__item">
+                    <a href="#">03</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="select__year">
+                <div class="select__header">
+                  <span class="select__current">20</span>
+                  <div class="select__icon-year">
+                    <img src="dist/static/arrow.svg" alt="arrow" />
+                  </div>
+                </div>
+
+                <div class="year">
+                  <div class="select__item">
+                    <a href="#">20</a>
+                  </div>
+                  <div class="select__item">
+                    <a href="#">21</a>
+                  </div>
+                  <div class="select__item">
+                    <a href="#">22</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="date__cvc">
+                <input
+                  type="number"
+                  required
+                  data-rule="number"
+                  data-from="3"
+                  data-to="3"
+                />
               </div>
             </div>
             <!-- / -->
@@ -124,7 +231,6 @@
         <!-- / -->
       </div>
     </div>
-
     <script src="dist/js/app.js"></script>
   </body>
 </html>
