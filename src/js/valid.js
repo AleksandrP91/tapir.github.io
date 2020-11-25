@@ -8,20 +8,23 @@ const validation = function () {
       // содержимое input
       let value = this.value;
       let check;
+      // let num;
 
       switch (rule) {
         case 'number':
-          let length = value.length;
-          let from = +this.dataset.from;
-          let to = +this.dataset.to;
-          check = length >= from && length <= to;
+          check = /^[0-9]{4,4}$/.test(value);
+          break;
+        case 'number-three':
+          check = /^[0-9]{3,3}$/.test(value);
           break;
         case 'text':
-          check = /^[a-zA-Z][a-zA-Z-_\.]{3,20}$/.test(value);
+          check = /^[a-zA-Z][a-zA-Z-_' '\.]{3,20}$/.test(value);
           break;
       }
+
       this.classList.remove('invalid-form');
       this.classList.remove('valid-form');
+
       if (check) {
         this.classList.add('valid-form');
       } else {
